@@ -2,6 +2,8 @@ import java.util.List;
 
 public abstract class ContenidoUnitario extends Contenido  {
 
+    //Es una clase abstrata porque la misma razon que Contenido es abstracto
+    //porque comparten atributos y metodos
 
     private Integer duracion;
     private List<String> actores;
@@ -14,7 +16,7 @@ public abstract class ContenidoUnitario extends Contenido  {
         this.actores = actores;
     }
 
-
+    //METODOS
     public List<String> getActores() {
         return actores;
     }

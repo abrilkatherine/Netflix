@@ -18,17 +18,27 @@ public class Serie extends Contenido {
 
 
     public List<String> getActores() {
+        //no entiendo bien esto, tambien lo googlee
+        //MAP: ""pasa de un stream de temporadas a un stream de lista de actores""
+        //FLATMAP: elimina la lista y me deja un stream de actores (strings)
+        //DISTINCT: elimina duplicados
+        //COLLECT: convierte el stream a lista
+
         return temporadas.stream()
                 .map(temporada -> temporada.getActores())
                 .flatMap(strings -> strings.stream())
+                .distinct()
                 .collect(Collectors.toList());
     }
 
 
     @Override
     public Integer getDuracion() {
-        //TODO HACER EL METODO RARO
-        return null;
+        //MAP: convierte el stream de capitulos a un stream de duraciones de temporadas (Stream<Integer>)
+        //REDUCE: hace una reduccion(de lista de Integer a un Integer solo) en este caso haciendo una sumantoria
+        return temporadas.stream()
+                .map(temporada -> temporada.getDuracion())
+                .reduce(0, ((integer, integer2) -> integer + integer2));
     }
 
 }
