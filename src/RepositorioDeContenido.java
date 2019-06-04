@@ -3,7 +3,8 @@ import java.util.List;
 
 public class RepositorioDeContenido {
 
-    //vamo a hardcodear tod0 ¯\_(ツ)_/¯ porque nada tiene sentido ahre
+    //vamo a hardcodear tod0 ¯\_(ツ)_/¯
+    //esta clase esta provisoriamente asi
     
     //lo pongo como static para poder usarlo desde todos lados sin instanciar la clase
     public static String generoRomance = "romance";
@@ -85,7 +86,7 @@ public class RepositorioDeContenido {
     };
 
 
-    public static Serie serieCualquiera = new Serie("cosas raras",generoRomance,temporadas);
+    public static Serie serieCosasRaras = new Serie("cosas raras",generoRomance,temporadas);
 
     public static Pelicula peliculaCualquiera = new Pelicula("Terminator II",actores, 120,generoRomance);
     

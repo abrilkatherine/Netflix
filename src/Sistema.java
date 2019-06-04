@@ -1,12 +1,11 @@
-public class Sistema {
+import com.sun.org.apache.xpath.internal.operations.Bool;
 
+import java.util.List;
+
+public class Sistema {
     //METODOS
 
-    //se fija que el contenido que le paso por parametro este en la lista de contenido que el usuario vio por completo
-    public static Boolean visteEsteContenidoCompleto(Contenido unContenido,Usuario unUsuario){
-        return unUsuario.getContenidoVistoCompleto()
-                .stream()
-                .anyMatch(contenido -> unContenido.getNombre().equals(contenido.getNombre()));
+    public Boolean vioElContenidoCompleto(Contenido unContenido, Usuario unUsuario) {
+        return null;
     }
-
 }
