@@ -17,7 +17,7 @@ public class Main {
 
         usuario.mirar(capitulo1);
 
-        //usuario.mirar(RepositorioDeContenido.temporada1.getCapitulos().get(0));
+        
         usuario.mirar(RepositorioDeContenido.peliculaCualquiera);
         Sistema sistema = new Sistema();
         System.out.println(sistema.vioElContenidoCompleto(contenido,usuario));

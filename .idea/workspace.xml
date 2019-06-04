@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b55be9e-1674-4211-b5e1-94a9c0918d5b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RepositorioDeContenido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RepositorioDeContenido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sistema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TPNetflix/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TPNetflix/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TPNetflix/RepositorioDeContenido$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TPNetflix/RepositorioDeContenido$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TPNetflix/RepositorioDeContenido$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TPNetflix/RepositorioDeContenido$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TPNetflix/RepositorioDeContenido$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TPNetflix/RepositorioDeContenido$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TPNetflix/RepositorioDeContenido.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TPNetflix/RepositorioDeContenido.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TPNetflix/Sistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TPNetflix/Sistema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TPNetflix/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TPNetflix/Usuario.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,16 +23,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Contenido.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -93,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/src/Usuario.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#359#360#0" expanded="true" />
@@ -228,12 +231,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559535166877</updated>
-      <workItem from="1559535172351" duration="21484000" />
+      <workItem from="1559535172351" duration="22087000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21484000" />
+    <option name="totallyTimeSpent" value="22087000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -356,16 +359,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Contenido.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="61" selection-start-line="3" selection-start-column="7" selection-end-line="4" selection-end-column="61" />
-          <folding>
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -379,7 +376,7 @@
     <entry file="file://$PROJECT_DIR$/src/Usuario.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#359#360#0" expanded="true" />
@@ -402,10 +399,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Contenido.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="68">
+          <caret line="4" column="61" selection-start-line="3" selection-start-column="7" selection-end-line="4" selection-end-column="61" />
+          <folding>
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
