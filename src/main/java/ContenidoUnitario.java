@@ -1,5 +1,3 @@
-package main.java;
-
 import java.util.List;
 
 public abstract class ContenidoUnitario extends Contenido {

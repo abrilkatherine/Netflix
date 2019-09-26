@@ -2,22 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b55be9e-1674-4211-b5e1-94a9c0918d5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPNetflix.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TPNetflix.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Capitulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Capitulo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Contenido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Contenido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ContenidoUnitario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ContenidoUnitario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pelicula.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RepositorioDeContenido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RepositorioDeContenido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Serie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sistema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Temporada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Temporada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Capitulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Capitulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Contenido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Contenido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ContenidoUnitario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ContenidoUnitario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pelicula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RepositorioDeContenido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RepositorioDeContenido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Serie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sistema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Temporada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Temporada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Usuario.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +54,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Quidditch" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />

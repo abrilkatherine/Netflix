@@ -1,6 +1,3 @@
-package main.java;
-
-import main.java.*;
 
 public class Main {
 
