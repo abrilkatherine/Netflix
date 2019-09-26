@@ -1,6 +1,10 @@
+package main.java;
+
+import main.java.ContenidoUnitario;
+
 import java.util.List;
 
-public class Capitulo extends ContenidoUnitario{
+public class Capitulo extends ContenidoUnitario {
 
     //CONSTRUCTOR
     public Capitulo(String nombre, List<String> actores, Integer duracion, String genero){

@@ -1,6 +1,8 @@
+package main.java;
+
 import java.util.List;
 
-public abstract class ContenidoUnitario extends Contenido  {
+public abstract class ContenidoUnitario extends Contenido {
 
     //Es una clase abstrata porque la misma razon que Contenido es abstracto
     //porque comparten atributos y metodos

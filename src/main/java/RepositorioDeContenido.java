@@ -1,3 +1,8 @@
+package main.java;
+
+import main.java.Serie;
+import main.java.Temporada;
+
 import java.util.ArrayList;
 import java.util.List;
 

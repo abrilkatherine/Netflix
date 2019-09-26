@@ -1,32 +1,35 @@
-import java.util.ArrayList;
+package main.java;
+
+import main.java.Temporada;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Temporada extends Contenido {
+public class Serie extends Contenido {
 
-    private List<Capitulo> capitulos;
+    private List<Temporada> temporadas;
 
     //CONSTRUCTOR
-    public Temporada(String nombre, String genero, List<Capitulo> capitulos){
+    public Serie(String nombre, String genero, List<Temporada> temporadas) {
         super(nombre, genero);
-        this.capitulos = capitulos;
+        this.temporadas = temporadas;
     }
 
     //METODOS
-    public List<Capitulo> getCapitulos() {
-        return capitulos;
+    public List<Temporada> getTemporadas() {
+        return temporadas;
     }
 
-    @Override
+
     public List<String> getActores() {
         //no entiendo bien esto, tambien lo googlee
-        //MAP: ""pasa de un stream de capitulos a un stream de lista de actores""
+        //MAP: ""pasa de un stream de temporadas a un stream de lista de actores""
         //FLATMAP: elimina la lista y me deja un stream de actores (strings)
         //DISTINCT: elimina duplicados
         //COLLECT: convierte el stream a lista
 
-        return capitulos.stream()
-                .map(capitulo -> capitulo.getActores())
+        return temporadas.stream()
+                .map(temporada -> temporada.getActores())
                 .flatMap(strings -> strings.stream())
                 .distinct()
                 .collect(Collectors.toList());
@@ -35,11 +38,11 @@ public class Temporada extends Contenido {
 
     @Override
     public Integer getDuracion() {
-        //MAP: convierte el stream de capitulos a un stream de duraciones de capitulos (Stream<Integer>)
+        //MAP: convierte el stream de capitulos a un stream de duraciones de temporadas (Stream<Integer>)
         //REDUCE: hace una reduccion(de lista de Integer a un Integer solo) en este caso haciendo una sumantoria
-
-        return capitulos.stream()
-                .map(capitulo -> capitulo.getDuracion())
+        return temporadas.stream()
+                .map(temporada -> temporada.getDuracion())
                 .reduce(0, ((integer, integer2) -> integer + integer2));
     }
+
 }
