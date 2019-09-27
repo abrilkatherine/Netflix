@@ -43,4 +43,8 @@ public class Temporada extends Contenido {
                 .map(capitulo -> capitulo.getDuracion())
                 .reduce(0, ((integer, integer2) -> integer + integer2));
     }
+    @Override
+    public Boolean fuisteVistoPor(Usuario unUsuario) {
+        return capitulos.stream().allMatch(capitulo -> capitulo.fuisteVistoPor(unUsuario));
+    }
 }

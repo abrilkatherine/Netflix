@@ -7,6 +7,7 @@ public abstract class ContenidoUnitario extends Contenido {
 
     private Integer duracion;
     private List<String> actores;
+    private List<ContenidoUnitario> repositorioDeContenido;
 
     //CONSTRUCTOR
 
@@ -23,6 +24,15 @@ public abstract class ContenidoUnitario extends Contenido {
 
     public Integer getDuracion() {
         return duracion;
+    }
+
+    public void agregarContenidoARepo(){
+        repositorioDeContenido.add(this);
+    }
+
+    @Override
+    public Boolean fuisteVistoPor(Usuario unUsuario) {
+        return true;
     }
 
 }

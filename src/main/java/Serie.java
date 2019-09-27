@@ -44,4 +44,7 @@ public class Serie extends Contenido {
                 .reduce(0, ((integer, integer2) -> integer + integer2));
     }
 
+    public Boolean fuisteVistoPor(Usuario unUsuario) {
+        return temporadas.stream().allMatch(temporada -> temporada.fuisteVistoPor(unUsuario));
+    }
 }

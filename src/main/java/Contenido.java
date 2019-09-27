@@ -28,4 +28,7 @@ public abstract class Contenido {
     public String getGenero() {
         return genero;
     }
+
+    public abstract Boolean fuisteVistoPor(Usuario unUsuario);
+
 }

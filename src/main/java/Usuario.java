@@ -26,4 +26,8 @@ public class Usuario {
     public void mirar(Contenido unContenido){
         contenidoVisto.add(unContenido);
     }
+
+    public Boolean vioContenidoCompleto(Contenido unContenido){
+        return unContenido.fuisteVistoPor(this);
+    }
 }
