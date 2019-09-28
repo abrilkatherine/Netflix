@@ -1,8 +1,6 @@
-
-import main.java.Temporada;
-
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Serie extends Contenido {
 
@@ -37,11 +35,8 @@ public class Serie extends Contenido {
 
     @Override
     public Integer getDuracion() {
-        //MAP: convierte el stream de capitulos a un stream de duraciones de temporadas (Stream<Integer>)
-        //REDUCE: hace una reduccion(de lista de Integer a un Integer solo) en este caso haciendo una sumantoria
         return temporadas.stream()
-                .map(temporada -> temporada.getDuracion())
-                .reduce(0, ((integer, integer2) -> integer + integer2));
+                .mapToInt(temporada -> temporada.getDuracion()).sum();
     }
 
     public Boolean fuisteVistoPor(Usuario unUsuario) {
