@@ -38,10 +38,9 @@
 
 hs_err_pid*
 
-.idea
 .idea/
-
-TpNetflix.iml 
+out/
+*.iml
 
 target/
 
