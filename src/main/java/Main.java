@@ -1,9 +1,6 @@
-
 public class Main {
 
     public static void main(String[] args) {
-
-        //punto 1
 
         Usuario usuario = new Usuario("Lourdes");
 
@@ -18,14 +15,9 @@ public class Main {
 
         usuario.mirar(capitulo1);
 
-        
         usuario.mirar(RepositorioDeContenido.peliculaCualquiera);
-        Sistema sistema = new Sistema();
-        System.out.println(sistema.vioElContenidoCompleto(contenido,usuario));
+        System.out.println(usuario.vioContenidoCompleto(contenido));
 
-        //punto 2
         System.out.println(RepositorioDeContenido.serieCosasRaras.getDuracion());
-        //TODO ARREGLAR QUE SERIE Y TEMPORADA TENGAN GENERO PORQUE ES EL MISMO QUE EL GENERO QUE TIENEN LOS CAPITULOS
-
     }
 }

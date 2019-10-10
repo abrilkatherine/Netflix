@@ -4,9 +4,6 @@ import java.util.List;
 
 public class RepositorioDeContenido {
 
-    //vamo a hardcodear tod0 ¯\_(ツ)_/¯
-    //esta clase esta provisoriamente asi
-    
     //lo pongo como static para poder usarlo desde todos lados sin instanciar la clase
     public static String generoRomance = "romance";
     public static String generoAccion = "accion";
