@@ -1,12 +1,16 @@
+package Model;
+
+import Model.Contenido;
+import Model.Temporada;
+import Model.Usuario;
+
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class Serie extends Contenido {
 
     private List<Temporada> temporadas;
 
-    //CONSTRUCTOR
     public Serie(String nombre, String genero, List<Temporada> temporadas) {
         super(nombre, genero);
         this.temporadas = temporadas;

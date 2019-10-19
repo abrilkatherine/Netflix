@@ -1,0 +1,7 @@
+package Storage;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class ContentStorage {
+}

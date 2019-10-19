@@ -1,3 +1,6 @@
+package Model;
+
+import Model.ContenidoUnitario;
 
 import java.util.List;
 

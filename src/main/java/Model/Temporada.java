@@ -1,5 +1,8 @@
+package Model;
 
-import java.util.ArrayList;
+import Model.Contenido;
+import Model.Usuario;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -12,7 +15,6 @@ public class Temporada extends Contenido {
         this.capitulos = capitulos;
     }
 
-    //METODOS
     public List<Capitulo> getCapitulos() {
         return capitulos;
     }
