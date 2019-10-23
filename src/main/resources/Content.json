@@ -1,0 +1,37 @@
+[
+  {
+    "id":,
+  "title":,
+  "year":,
+  "duration":,
+  "genre":,
+  "director":,,
+  "actors":,
+  "plot":
+  },
+  {
+    "id":,
+  "title":,
+  "year":,
+  "duration":,
+  "genre":,
+  "director":,
+  "actors":,
+  "plot":,
+  "seasons":[],
+  "id":,
+  "number":,
+  "duration":,
+  "episodes":[]
+},
+  "id":,
+  "number":,
+  "duration":,
+  "guest actor":[]
+}
+],
+"number_of_episodes":,
+],
+"number_of_seasons”:,
+}
+]

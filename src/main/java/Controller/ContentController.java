@@ -1,6 +1,6 @@
 package Controller;
 
-import Model.ContenidoUnitario;
+import Model.Content;
 import Service.ContentService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,9 +17,8 @@ public class ContentController {
     }
 
     @GetMapping("/content")
-    public List<ContenidoUnitario>content{
-        @RequestParam(value="title",required = false) String title){
-            return contentService.content(title);
-        }
+    public List<Content>content(@RequestParam(value="title",required = false) String title){
+            return contentService.contents(title);
     }
 }
+
