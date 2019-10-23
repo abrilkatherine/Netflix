@@ -33,9 +33,7 @@ public class Content implements Serializable {
         this.seasons=seasons;
         this.number=number;
         this.episodes=episodes;
-
-
-
+        
     }
 
     public Integer getId() {

@@ -17,7 +17,7 @@ public class ContentController {
     }
 
     @GetMapping("/content")
-    public List<Content>content(@RequestParam(value="title",required = false) String title){
+    public List<Content>content(String title){
             return contentService.contents(title);
     }
 }
