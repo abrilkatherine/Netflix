@@ -1,9 +1,5 @@
 package Model;
 
-import Model.Contenido;
-import Model.Temporada;
-import Model.Usuario;
-
 import java.util.List;
 import java.util.stream.Collectors;
 

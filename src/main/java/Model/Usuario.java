@@ -1,9 +1,9 @@
 package Model;
 
-import Model.Contenido;
-
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Usuario {
 
@@ -30,4 +30,14 @@ public class Usuario {
     public Boolean vioContenidoCompleto(Contenido unContenido){
         return unContenido.fuisteVistoPor(this);
     }
+    public Integer minutosVistosDe(String genero){
+        return this.getContenidoVisto().stream().filter(c->c.getGenero().equals(genero)).mapToInt(c->c.getDuracion()).sum();
+    }
+    public List<String> generosVistosSinRepeticion() {
+        return this.contenidoVisto.stream().map(c -> c.getGenero()).distinct().collect(Collectors.toList());
+    }
+    public String generoPreferido(){
+        return this.generosVistosSinRepeticion().stream().max(Comparator.comparing(genero->this.minutosVistosDe(genero))).get();
+        }
 }
+

@@ -4,26 +4,50 @@ import java.util.List;
 
 public abstract class Contenido {
 
-    private String nombre;
+    private Integer duracion;
+    private List<String> actores;
     private String genero;
+    private String nombre;
+    private List<Contenido> repositorioDeContenido;
 
-    public Contenido(String nombre, String genero) {
-        this.nombre = nombre;
-        this.genero = genero;
+    //CONSTRUCTOR
+
+    public Contenido(String nombre, List<String> actores, Integer duracion, String genero) {
+        this.setNombre(nombre);
+        this.setGenero(genero);
+        this.duracion = duracion;
+        this.actores = actores;
     }
 
-    public abstract Integer getDuracion();
+    public List<String> getActores() {
+        return actores;
+    }
 
-    public abstract List<String> getActores();
+    public Integer getDuracion() {
+        return duracion;
+    }
 
-    public String getNombre() {
-        return nombre;
+    public void agregarContenidoARepo(){
+        repositorioDeContenido.add(this);
+    }
+
+    public Boolean fuisteVistoPor(Usuario unUsuario) {
+        return true;
     }
 
     public String getGenero() {
         return genero;
     }
 
-    public abstract Boolean fuisteVistoPor(Usuario unUsuario);
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 }
