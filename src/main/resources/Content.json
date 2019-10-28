@@ -1,37 +1,32 @@
 [
   {
-    "id":,
-  "title":,
-  "year":,
-  "duration":,
-  "genre":,
-  "director":,,
-  "actors":,
-  "plot":
+    "type": "Pelicula",
+    "name": "",
+    "genre": ""
   },
   {
-    "id":,
-  "title":,
-  "year":,
-  "duration":,
-  "genre":,
-  "director":,
-  "actors":,
-  "plot":,
-  "seasons":[],
-  "id":,
-  "number":,
-  "duration":,
-  "episodes":[]
-},
-  "id":,
-  "number":,
-  "duration":,
-  "guest actor":[]
-}
-],
-"number_of_episodes":,
-],
-"number_of_seasons”:,
-}
+    "type": "Pelicula",
+    "name": "Titanic",
+    "genre": ""
+  },
+  {
+    "type": "Pelicula",
+    "name": "",
+    "genre": ""
+  },
+  {
+    "type": "Serie",
+    "name": "",
+    "genre": ""
+  },
+  {
+    "type": "Serie",
+    "name": "",
+    "genre": ""
+  },
+  {
+    "type": "Serie",
+    "name": "",
+    "genre": ""
+  }
 ]
