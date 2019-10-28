@@ -1,7 +1,7 @@
-package Service;
+package service;
 
-import Model.Content;
-import Storage.ContentStorage;
+import model.Content;
+import persistence.ContentStorage;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;

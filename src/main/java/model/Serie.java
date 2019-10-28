@@ -1,14 +1,17 @@
-package Model;
+package model;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Serie extends Contenido {
+public class Serie  {
 
     private List<Temporada> temporadas;
+    private String nombre;
+    private String genero;
 
     public Serie(String nombre, String genero, List<Temporada> temporadas) {
-        super(nombre, genero);
+        this.nombre=nombre;
+        this.genero=genero;
         this.temporadas = temporadas;
     }
 
@@ -24,8 +27,6 @@ public class Serie extends Contenido {
                 .distinct()
                 .collect(Collectors.toList());
     }
-
-    @Override
     public Integer getDuracion() {
         return temporadas.stream()
                 .mapToInt(temporada -> temporada.getDuracion()).sum();

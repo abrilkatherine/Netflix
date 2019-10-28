@@ -1,4 +1,4 @@
-package Model;
+package model;
 
 import java.util.List;
 
@@ -9,8 +9,6 @@ public abstract class Contenido {
     private String genero;
     private String nombre;
     private List<Contenido> repositorioDeContenido;
-
-    //CONSTRUCTOR
 
     public Contenido(String nombre, List<String> actores, Integer duracion, String genero) {
         this.setNombre(nombre);

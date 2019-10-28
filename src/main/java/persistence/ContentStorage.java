@@ -1,6 +1,6 @@
-package Storage;
+package persistence;
 
-import Model.Content;
+import model.Content;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Component;
