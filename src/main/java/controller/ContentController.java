@@ -13,12 +13,13 @@ public class ContentController {
 
     @Autowired
     private ContentService contentService;
-    private ContentController(ContentService contentService){
-    this.contentService= contentService;
+
+    private ContentController(ContentService contentService) {
+        this.contentService = contentService;
     }
 
     @GetMapping("/content")
-    public List<Content>content(String title){
-            return contentService.contents(title);
+    public List<Content> content(String title) {
+        return contentService.contents(title);
     }
 }
