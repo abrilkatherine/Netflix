@@ -30,9 +30,11 @@ public class Usuario {
     public Boolean vioContenidoCompleto(Contenido unContenido){
         return unContenido.fuisteVistoPor(this);
     }
+
     public Integer minutosVistosDe(String genero){
         return this.getContenidoVisto().stream().filter(c->c.getGenero().equals(genero)).mapToInt(c->c.getDuracion()).sum();
     }
+
     public List<String> generosVistosSinRepeticion() {
         return this.contenidoVisto.stream().map(c -> c.getGenero()).distinct().collect(Collectors.toList());
     }

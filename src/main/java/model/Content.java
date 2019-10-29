@@ -1,6 +1,7 @@
 package model;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class Content implements Serializable {
     private Integer id;
@@ -9,7 +10,7 @@ public class Content implements Serializable {
     private Integer duration;
     private String genre;
     private String director;
-    private String actor;
+    private List<String> actors;
     private String plot;
     private String seasons;
     private Integer number;
@@ -20,7 +21,7 @@ public class Content implements Serializable {
     }
 
     public Content(Integer id, String title, Integer year, Integer duration, String genre, String director,
-                   String actor, String plot, String seasons, Integer number, Integer episodes){
+                   List<String> actor, String plot, String seasons, Integer number, Integer episodes){
 
         this. id=id;
         this.title=title;
@@ -28,7 +29,7 @@ public class Content implements Serializable {
         this.duration=duration;
         this.genre=genre;
         this.director=director;
-        this.actor=actor;
+        this.actors=actor;
         this.plot=plot;
         this.seasons=seasons;
         this.number=number;
@@ -84,12 +85,8 @@ public class Content implements Serializable {
         this.director = director;
     }
 
-    public String getActor() {
-        return actor;
-    }
-
-    public void setActor(String actor) {
-        this.actor = actor;
+    public List<String> getActor() {
+        return actors;
     }
 
     public String getPlot() {
