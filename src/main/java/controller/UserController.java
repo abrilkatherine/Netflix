@@ -1,6 +1,6 @@
 package controller;
 
-import Service.UserService;
+import service.UserService;
 import model.Content;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,7 +20,7 @@ public class UserController {
 
     @GetMapping("/user_id/contents")
     public List<Content> contents(@RequestParam(value="genre", required= false)String genre) {
-        return contentService.contents(genre);
+        return userService.contents(genre);
 
     }
 }
