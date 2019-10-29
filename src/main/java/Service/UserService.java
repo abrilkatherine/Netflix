@@ -1,27 +1,27 @@
 package service;
-
 import model.Content;
-import persistence.ContentStorage;
 import org.springframework.stereotype.Service;
+import persistence.ContentStorage;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class ContentService {
+public class UserService {
     private List<Content> contentList;
+
     private ContentStorage contentStorage;
 
-    public ContentService(ContentStorage contentStorage) {
+    public UserService(ContentStorage contentStorage) {
         this.contentStorage = contentStorage;
     }
 
-    public List<Content> contents(String title) {
-        contentList= contentStorage.readContent();
-        if (title == null) {
+    public List<Content> contents(String genre) {
+        contentList = contentStorage.readContent();
+        if (genre == null) {
             return contentList;
         } else {
             return contentList.stream().filter(
-                    contentUnidad -> contentUnidad.getTitle().equals(title))
+                    contentUnidad -> contentUnidad.getGenre().equals(genre))
                     .collect(Collectors.toList());
         }
     }
