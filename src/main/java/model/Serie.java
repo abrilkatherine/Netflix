@@ -3,15 +3,14 @@ package model;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Serie  {
+public class Serie extends ContenidoGeneral  {
 
     private List<Temporada> temporadas;
     private String nombre;
     private String genero;
 
-    public Serie(String nombre, String genero, List<Temporada> temporadas) {
-        this.nombre=nombre;
-        this.genero=genero;
+    public Serie(Integer id, String nombre, Integer año,  String genero, List<Temporada> temporadas, String director) {
+        super(id, nombre, año, null, null, genero,  director);
         this.temporadas = temporadas;
     }
 
