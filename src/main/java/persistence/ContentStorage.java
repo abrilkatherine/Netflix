@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ResourceUtils;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
@@ -24,6 +25,15 @@ public class ContentStorage {
                     (ResourceUtils.getFile("classpath:Content.json"),
                             new TypeReference<List<Content>>() {
                             });
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void writeContent(Content content) {
+        try {
+            objectMapper.writeValue(new File("src/main/resources/content.json"), content);
         } catch (IOException e) {
             e.printStackTrace();
             throw new RuntimeException(e);

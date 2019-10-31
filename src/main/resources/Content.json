@@ -1,32 +1,65 @@
 [
   {
-    "type": "Pelicula",
-    "name": "",
-    "genre": ""
+    "id": "",
+    "title": "",
+    "year": "",
+    "duration": "",
+    "genre": "",
+    "director": "",
+    "actors": "",
+    "plot:""
   },
   {
-    "type": "Pelicula",
-    "name": "Titanic",
-    "genre": ""
+    "id": "",
+    "title": "",
+    "year": "",
+    "duration": "",
+    "genre": "",
+    "director": "",
+    "actors": "",
+    "plot:""
   },
   {
-    "type": "Pelicula",
-    "name": "",
-    "genre": ""
+    "id": "",
+    "title": "",
+    "year": "",
+    "duration": "",
+    "genre": "",
+    "director": "",
+    "actors": "",
+    "plot:""
   },
   {
-    "type": "Serie",
-    "name": "",
-    "genre": ""
+  "id": "",
+  "title": "",
+  "year": "",
+  "duration": "",
+  "genre": "",
+  "director": "",
+  "actors": "",
+  "plot:""
   },
   {
-    "type": "Serie",
-    "name": "",
-    "genre": ""
+  "id": "",
+  "title": "",
+  "year": "",
+  "duration": "",
+  "genre": "",
+  "director": "",
+  "actors": "",
+  "plot:""
   },
   {
-    "type": "Serie",
-    "name": "",
-    "genre": ""
+    "id": "",
+    "title": "",
+    "year": "",
+    "duration": "",
+    "genre": "",
+    "director": "",
+    "actors": "",
+    "plot:""
   }
-]
+
+  {
+
+    ]
