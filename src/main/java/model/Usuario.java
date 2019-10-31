@@ -28,6 +28,7 @@ public class Usuario {
     }
 
     public Boolean vioContenidoCompleto(ContenidoGeneral unContenido){
+
         return unContenido.fuisteVistoPor(this);
     }
 
