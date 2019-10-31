@@ -3,22 +3,20 @@ package model;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Temporada {
+public class Temporada extends ContenidoGeneral {
 
     private List<Capitulo> capitulos;
     private String nombre;
     private String genero;
 
     public Temporada(String nombre, String genero, List<Capitulo> capitulos){
-        this.capitulos = capitulos;
-        this.nombre = nombre;
-        this.genero = genero;
+        super(null, nombre, null, null, null, genero, null);
+        this.capitulos=capitulos;
     }
 
     public List<Capitulo> getCapitulos() {
         return capitulos;
     }
-
 
     public List<String> getActores() {
 
@@ -35,7 +33,6 @@ public class Temporada {
                 .map(capitulo -> capitulo.getDuracion())
                 .reduce(0, ((integer, integer2) -> integer + integer2));
     }
-
     public Boolean fuisteVistoPor(Usuario unUsuario) {
         return capitulos.stream().allMatch(capitulo -> capitulo.fuisteVistoPor(unUsuario));
     }

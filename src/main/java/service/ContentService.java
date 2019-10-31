@@ -1,8 +1,10 @@
 package service;
 
 import model.Content;
-import persistence.ContentStorage;
+import model.Usuario;
 import org.springframework.stereotype.Service;
+import persistence.ContentStorage;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -10,6 +12,8 @@ import java.util.stream.Collectors;
 public class ContentService {
     private List<Content> contentList;
     private ContentStorage contentStorage;
+    private Usuario user;
+
 
     public ContentService(ContentStorage contentStorage) {
         this.contentStorage = contentStorage;
