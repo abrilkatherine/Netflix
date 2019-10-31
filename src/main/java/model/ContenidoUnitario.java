@@ -28,7 +28,7 @@ public abstract class ContenidoUnitario extends ContenidoGeneral{
     }
 
     public Boolean fuisteVistoPor(Usuario unUsuario) {
-        return contenidoUnitarioVisto.contains(this);
+        return unUsuario.visteEsteContenidoCompleto(this);
     }
 
     public String getGenero() {
