@@ -30,6 +30,7 @@ public abstract class ContenidoUnitario extends ContenidoGeneral{
     public Boolean fuisteVistoPor(Usuario unUsuario) {
         return unUsuario.visteEsteContenidoCompleto(this);
     }
+    abstract ContenidoGeneral contenidoGeneralDelUnitario();
 
     public String getGenero() {
         return genero;

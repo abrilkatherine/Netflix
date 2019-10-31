@@ -9,6 +9,7 @@ public class Usuario {
 
    private String nombre;
    private List<ContenidoUnitario> contenidoUnitarioVisto;
+   private List<ContenidoGeneral> contenidoVistoCompleto;
 
     public Usuario(String nombre) {
         this.nombre = nombre;
@@ -25,6 +26,9 @@ public class Usuario {
 
     public void mirar(ContenidoUnitario unContenidoUnitario){
         contenidoUnitarioVisto.add(unContenidoUnitario);
+        if(this.vioContenidoCompleto(unContenidoUnitario.contenidoGeneralDelUnitario())){
+            contenidoVistoCompleto.add(unContenidoUnitario.contenidoGeneralDelUnitario());
+        }
     }
 
     public Boolean vioContenidoCompleto(ContenidoGeneral unContenido){
