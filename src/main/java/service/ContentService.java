@@ -1,10 +1,10 @@
-package Service;
+package service;
 
-import model.Contenido;
 import model.Content;
 import model.Usuario;
-import persistence.ContentStorage;
 import org.springframework.stereotype.Service;
+import persistence.ContentStorage;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -29,7 +29,4 @@ public class ContentService {
                     .collect(Collectors.toList());
         }
     }
-
-
-
 }

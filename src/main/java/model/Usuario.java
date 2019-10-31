@@ -8,35 +8,35 @@ import java.util.stream.Collectors;
 public class Usuario {
 
    private String nombre;
-   private List<Contenido> contenidoVisto;
+   private List<ContenidoUnitario> contenidoUnitarioVisto;
 
     public Usuario(String nombre) {
         this.nombre = nombre;
-        this.contenidoVisto = new ArrayList<>();
+        this.contenidoUnitarioVisto = new ArrayList<>();
     }
 
     public String getNombre() {
         return nombre;
     }
 
-    public List<Contenido> getContenidoVisto() {
-        return contenidoVisto;
+    public List<ContenidoUnitario> getContenidoUnitarioVisto() {
+        return contenidoUnitarioVisto;
     }
 
-    public void mirar(Contenido unContenido){
-        contenidoVisto.add(unContenido);
+    public void mirar(ContenidoUnitario unContenidoUnitario){
+        contenidoUnitarioVisto.add(unContenidoUnitario);
     }
 
-    public Boolean vioContenidoCompleto(Contenido unContenido){
+    public Boolean vioContenidoCompleto(ContenidoGeneral unContenido){
         return unContenido.fuisteVistoPor(this);
     }
 
     public Integer minutosVistosDe(String genero){
-        return this.getContenidoVisto().stream().filter(c->c.getGenero().equals(genero)).mapToInt(c->c.getDuracion()).sum();
+        return this.getContenidoUnitarioVisto().stream().filter(c->c.getGenero().equals(genero)).mapToInt(c->c.getDuracion()).sum();
     }
 
     public List<String> generosVistosSinRepeticion() {
-        return this.contenidoVisto.stream().map(c -> c.getGenero()).distinct().collect(Collectors.toList());
+        return this.contenidoUnitarioVisto.stream().map(c -> c.getGenero()).distinct().collect(Collectors.toList());
     }
     public String generoPreferido(){
         return this.generosVistosSinRepeticion().stream().max(Comparator.comparing(genero->this.minutosVistosDe(genero))).get();

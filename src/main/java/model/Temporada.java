@@ -3,16 +3,15 @@ package model;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Temporada {
+public class Temporada extends ContenidoGeneral {
 
     private List<Capitulo> capitulos;
     private String nombre;
     private String genero;
 
     public Temporada(String nombre, String genero, List<Capitulo> capitulos){
-        this.nombre = nombre;
-        this.genero = genero;
-        this.capitulos = capitulos;
+        super(null, nombre, null, null, null, genero, null);
+        this.capitulos=capitulos;
     }
 
     public List<Capitulo> getCapitulos() {
@@ -27,7 +26,6 @@ public class Temporada {
                 .distinct()
                 .collect(Collectors.toList());
     }
-
 
     public Integer getDuracion() {
 

@@ -2,18 +2,19 @@ package model;
 
 import java.util.List;
 
-public abstract class Contenido {
+abstract class ContenidoGeneral {
 
     private Integer duracion;
     private List<String> actores;
     private String genero;
     private String nombre;
-    private List<Contenido> repositorioDeContenido;
+    private List<ContenidoUnitario> repositorioDeContenidoUnitario;
     private Integer id;
     private Integer año;
     private String director;
+    private List<ContenidoUnitario> contenidoUnitarioVisto;
 
-    public Contenido(Integer id, String nombre, Integer año, List<String> actores, Integer duracion, String genero, String director) {
+    public ContenidoGeneral(Integer id, String nombre, Integer año, List<String> actores, Integer duracion, String genero, String director) {
         this.setNombre(nombre);
         this.setId(id);
         this.setGenero(genero);
@@ -27,17 +28,12 @@ public abstract class Contenido {
         return actores;
     }
 
+
     public Integer getDuracion() {
         return duracion;
     }
 
-    public void agregarContenidoARepo(){
-        repositorioDeContenido.add(this);
-    }
-
-    public Boolean fuisteVistoPor(Usuario unUsuario) {
-        return true;
-    }
+    abstract Boolean fuisteVistoPor(Usuario unUsuario);
 
     public String getGenero() {
         return genero;

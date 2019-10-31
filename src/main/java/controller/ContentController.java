@@ -1,7 +1,6 @@
 package controller;
-
 import model.Content;
-import Service.ContentService;
+import service.ContentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -25,5 +24,4 @@ public class ContentController {
     public List<Content>contents(@RequestParam(value="genre", required= false)String genre){
         return contentService.contents(genre);
    }
-
 }
