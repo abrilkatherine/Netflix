@@ -1,12 +1,10 @@
 package controller;
 
-import jdk.javadoc.internal.doclets.formats.html.Contents;
 import model.User;
 import org.springframework.web.bind.annotation.*;
 import service.ContentService;
 import service.UserService;
 import model.Content;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
@@ -19,7 +17,7 @@ public class UserController {
 
     private UserService userService;
 
-    private UserController(UserService userService) {
+    public UserController(UserService userService) {
         this.userService = userService;
     }
 

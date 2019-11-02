@@ -11,17 +11,13 @@ import java.util.List;
 @RestController
 public class ContentController {
 
-    @Autowired
     private ContentService contentService;
-    private ContentController(ContentService contentService){
+    public ContentController(ContentService contentService){
     this.contentService= contentService;
     }
 
     @GetMapping("/content")
-    public List<Content>content(String title){
+    public List<Content> content(@RequestParam(value = "title", required = false) String title){
             return contentService.contents(title);
-    }
-    public List<Content>contents(@RequestParam(value="genre", required= false)String genre){
-        return contentService.contents(genre);
    }
 }
