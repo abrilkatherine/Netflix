@@ -1,13 +1,23 @@
 [
   {
-    "id": "",
-    "title": "",
-    "year": "",
-    "duration": "",
-    "genre": "",
-    "director": "",
-    "actors": "",
-    "plot:""
+    "id": "1234",
+    "title": "Titanic",
+    "year": "1997",
+    "duration": "194 min",
+    "genre": "Drama",
+    "director": "James Cameron",
+    "actors": ["Leonado DiCaprio","pirulo","carmen"],
+    "plot":"lalala"
+  },
+  {
+    "id": "9054",
+    "title": "Las ventajas de ser invisible",
+    "year": "2009",
+    "duration": "180 min",
+    "genre": "Drama",
+    "director": "pirulin",
+    "actors": ["lala","Rosa"],
+    "plot":"No se que poner"
   },
   {
     "id": "",
@@ -17,17 +27,7 @@
     "genre": "",
     "director": "",
     "actors": "",
-    "plot:""
-  },
-  {
-    "id": "",
-    "title": "",
-    "year": "",
-    "duration": "",
-    "genre": "",
-    "director": "",
-    "actors": "",
-    "plot:""
+    "plot":""
   },
   {
   "id": "",
@@ -37,7 +37,7 @@
   "genre": "",
   "director": "",
   "actors": "",
-  "plot:""
+  "plot":""
   },
   {
   "id": "",
@@ -47,7 +47,7 @@
   "genre": "",
   "director": "",
   "actors": "",
-  "plot:""
+  "plot":""
   },
   {
     "id": "",
@@ -57,9 +57,7 @@
     "genre": "",
     "director": "",
     "actors": "",
-    "plot:""
+    "plot":""
   }
-
-  {
 
     ]
