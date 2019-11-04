@@ -1,6 +1,6 @@
-package persistence;
+package ada.septima.back.persistence;
 
-import model.Content;
+import ada.septima.back.model.Content;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Component;

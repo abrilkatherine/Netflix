@@ -1,10 +1,10 @@
-package service;
+package ada.septima.back.service;
 
-import model.ContenidoUnitario;
-import model.Content;
-import model.Usuario;
+import ada.septima.back.model.ContenidoUnitario;
+import ada.septima.back.model.Content;
+import ada.septima.back.model.Usuario;
 import org.springframework.stereotype.Service;
-import persistence.ContentStorage;
+import ada.septima.back.persistence.ContentStorage;
 
 import java.util.List;
 import java.util.stream.Collectors;

@@ -1,4 +1,4 @@
-package model;
+package ada.septima.back.model;
 
 import java.io.Serializable;
 

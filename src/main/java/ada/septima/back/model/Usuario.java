@@ -1,4 +1,4 @@
-package model;
+package ada.septima.back.model;
 
 import java.util.ArrayList;
 import java.util.Comparator;

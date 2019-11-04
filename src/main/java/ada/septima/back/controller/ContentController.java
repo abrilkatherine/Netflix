@@ -1,7 +1,6 @@
-package controller;
-import model.Content;
-import service.ContentService;
-import org.springframework.beans.factory.annotation.Autowired;
+package ada.septima.back.controller;
+import ada.septima.back.model.Content;
+import ada.septima.back.service.ContentService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

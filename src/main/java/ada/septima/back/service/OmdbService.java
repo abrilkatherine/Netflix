@@ -1,5 +1,5 @@
-package service;
-import model.Content;
+package ada.septima.back.service;
+import ada.septima.back.model.Content;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 

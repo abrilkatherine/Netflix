@@ -1,10 +1,10 @@
-package controller;
+package ada.septima.back.controller;
 
-import model.User;
+import ada.septima.back.model.User;
 import org.springframework.web.bind.annotation.*;
-import service.ContentService;
-import service.UserService;
-import model.Content;
+import ada.septima.back.service.ContentService;
+import ada.septima.back.service.UserService;
+import ada.septima.back.model.Content;
 
 import java.util.List;
 
