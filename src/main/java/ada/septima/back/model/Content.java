@@ -1,6 +1,9 @@
 package ada.septima.back.model;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+
 import java.io.Serializable;
+import java.util.Arrays;
 import java.util.List;
 
 public class Content implements Serializable {
@@ -26,7 +29,7 @@ public class Content implements Serializable {
         this. id=id;
         this.title=title;
         this.year=year;
-        this.duration=duration;
+        this.duration=duration; //Integer.valueOf(...)
         this.genre=genre;
         this.director=director;
         this.actors=actor;
@@ -35,6 +38,12 @@ public class Content implements Serializable {
         this.number=number;
         this.episodes=episodes;
         
+    }
+    @JsonCreator
+    public Content(Integer id, String title, String year, String duration, String genre, String director,
+                   String actor, String plot, String seasons, Integer number, Integer episodes){
+
+        this(id,title,Integer.valueOf(year), Integer.valueOf(duration.split("\\s")[0]), genre, director, Arrays.asList(actor.split(",")), plot, seasons, number, episodes);
     }
 
     public Integer getId() {
