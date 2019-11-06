@@ -1,6 +1,7 @@
 package ada.septima.back.model;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class Response implements Serializable {
 
@@ -10,14 +11,14 @@ public class Response implements Serializable {
     private Integer duration;
     private String genre;
     private String director;
-    private String actors;
+    private List<String> actors;
     private String plot;
 
     public Response() {
     }
 
     public Response(Integer id, String title, Integer year, Integer duration, String genre, String director,
-                    String actors, String plot){
+                    List<String> actors, String plot){
     }
 
     public Integer getId() {
@@ -68,11 +69,11 @@ public class Response implements Serializable {
         this.director = director;
     }
 
-    public String getActors() {
+    public List<String> getActors() {
         return actors;
     }
 
-    public void setActors(String actors) {
+    public void setActors(List<String> actors) {
         this.actors = actors;
     }
 
