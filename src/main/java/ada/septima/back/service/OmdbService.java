@@ -16,8 +16,6 @@ public class OmdbService {
 
     private Response contenToResponse(Content content){
         Response newResponse;
-        return newResponse= new Response(content.getId(),content.getTitle(),content.getYear(),content.getDuration(),
-                content.getGenre(),content.getDirector(),content.,content.getPlot(),content.getSeasons(),
-                content.getNumber(),content.getEpisodes());
+        return newResponse= new Response(content.getId(),content.getTitle(),content.getYear(),content.getDuration(),content.getGenre(),content.getDirector(),content.getActor(),content.getPlot());
     }
 }

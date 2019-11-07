@@ -1,5 +1,6 @@
 package ada.septima.back.controller;
 
+import ada.septima.back.model.Response;
 import ada.septima.back.model.User;
 import org.springframework.web.bind.annotation.*;
 import ada.septima.back.service.ContentService;
@@ -22,8 +23,8 @@ public class UserController {
     }
 
     @GetMapping("/user/{user_id}/contents")
-    public List<Content> contents(@PathVariable(value = "user_id") Integer userId,
-                                  @RequestParam(value = "genre", required = false) String genre) {
+    public List<Response> contents(@PathVariable(value = "user_id") Integer userId,
+                                   @RequestParam(value = "genre", required = false) String genre) {
         return userService.contentsWatched();
     }
 
