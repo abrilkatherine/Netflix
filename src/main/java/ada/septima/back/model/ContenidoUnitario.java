@@ -14,6 +14,10 @@ public abstract class ContenidoUnitario extends ContenidoGeneral{
     private String director;
     private List<ContenidoUnitario> contenidoUnitarioVisto;
 
+    public ContenidoUnitario(){
+        super();
+    }
+
     public ContenidoUnitario(Integer id, String nombre, Integer año, List<String> actores, Integer duracion, String genero, String director) {
         super(id, nombre, año, actores, duracion, genero, director);
     }
@@ -30,7 +34,7 @@ public abstract class ContenidoUnitario extends ContenidoGeneral{
     public Boolean fuisteVistoPor(Usuario unUsuario) {
         return unUsuario.visteEsteContenidoCompleto(this);
     }
-    abstract ContenidoGeneral contenidoGeneralDelUnitario();
+    public abstract ContenidoGeneral contenidoGeneralDelUnitario();
 
     public String getGenero() {
         return genero;

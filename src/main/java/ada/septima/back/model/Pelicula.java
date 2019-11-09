@@ -9,7 +9,7 @@ public class Pelicula extends ContenidoUnitario {
     }
 
     @Override
-    ContenidoGeneral contenidoGeneralDelUnitario() {
+    public ContenidoGeneral contenidoGeneralDelUnitario() {
         return this;
     }
 

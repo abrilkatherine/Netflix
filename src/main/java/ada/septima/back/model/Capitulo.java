@@ -21,7 +21,7 @@ public class Capitulo extends ContenidoUnitario {
     }
 
     @Override
-    ContenidoGeneral contenidoGeneralDelUnitario() {
+    public ContenidoGeneral contenidoGeneralDelUnitario() {
         return this.miserie;
     }
 }

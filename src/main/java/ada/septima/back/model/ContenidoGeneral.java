@@ -2,7 +2,7 @@ package ada.septima.back.model;
 
 import java.util.List;
 
-abstract class ContenidoGeneral {
+public abstract class ContenidoGeneral {
 
     private Integer duracion;
     private List<String> actores;
@@ -13,6 +13,8 @@ abstract class ContenidoGeneral {
     private Integer año;
     private String director;
     private List<ContenidoUnitario> contenidoUnitarioVisto;
+
+    public ContenidoGeneral(){}
 
     public ContenidoGeneral(Integer id, String nombre, Integer año, List<String> actores, Integer duracion, String genero, String director) {
         this.setNombre(nombre);
