@@ -24,4 +24,9 @@ public class Capitulo extends ContenidoUnitario {
     public ContenidoGeneral contenidoGeneralDelUnitario() {
         return this.miserie;
     }
+
+    @Override
+    public Boolean fuisteVistoPor(Usuario unUsuario) {
+        return unUsuario.getContenidoUnitarioVisto().contains(this);
+    }
 }

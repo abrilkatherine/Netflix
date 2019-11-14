@@ -13,6 +13,7 @@ public abstract class ContenidoUnitario extends ContenidoGeneral{
     private Integer año;
     private String director;
     private List<ContenidoUnitario> contenidoUnitarioVisto;
+    private Serie miserie;
 
     public ContenidoUnitario(){
         super();
@@ -74,5 +75,13 @@ public abstract class ContenidoUnitario extends ContenidoGeneral{
 
     public void setDirector(String director) {
         this.director = director;
+    }
+
+    public Serie getMiserie() {
+        return miserie;
+    }
+
+    public void setMiserie(Serie miserie) {
+        this.miserie = miserie;
     }
 }
