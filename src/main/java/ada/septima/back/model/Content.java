@@ -14,10 +14,6 @@ public class Content implements Serializable {
     private String genre;
     private String director;
     private List<String> actors;
-    private String plot;
-    private String seasons;
-    private Integer number;
-    private Integer episodes;
 
     public Content(){
 
@@ -33,10 +29,6 @@ public class Content implements Serializable {
         this.genre=genre;
         this.director=director;
         this.actors=actor;
-        this.plot=plot;
-        this.seasons=seasons;
-        this.number=number;
-        this.episodes=episodes;
         
     }
     @JsonCreator
@@ -96,37 +88,5 @@ public class Content implements Serializable {
 
     public List<String> getActor() {
         return actors;
-    }
-
-    public String getPlot() {
-        return plot;
-    }
-
-    public void setPlot(String plot) {
-        this.plot = plot;
-    }
-
-    public String getSeasons() {
-        return seasons;
-    }
-
-    public void setSeasons(String seasons) {
-        this.seasons = seasons;
-    }
-
-    public Integer getNumber() {
-        return number;
-    }
-
-    public void setNumber(Integer number) {
-        this.number = number;
-    }
-
-    public Integer getEpisodes() {
-        return episodes;
-    }
-
-    public void setEpisodes(Integer episodes) {
-        this.episodes = episodes;
     }
 }

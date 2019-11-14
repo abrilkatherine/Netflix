@@ -1,5 +1,7 @@
 package ada.septima.back.controller;
+
 import ada.septima.back.model.Content;
+import ada.septima.back.model.Response;
 import ada.septima.back.service.ContentService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -16,7 +18,7 @@ public class ContentController {
     }
 
     @GetMapping("/content")
-    public List<Content> content(@RequestParam(value = "title", required = false) String title){
+    public Response content(@RequestParam(value = "title", required = false) String title){
             return contentService.contents(title);
-   }
+    }
 }

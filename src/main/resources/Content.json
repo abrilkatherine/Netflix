@@ -6,11 +6,7 @@
     "duration": "194 min",
     "genre": "Drama",
     "director": "James Cameron",
-    "actor": "Leonado DiCaprio,pirulo,carmen",
-    "plot":"lalala",
-    "seasons": null,
-    "number": null,
-    "episodes": null
+    "actor": "Leonado DiCaprio,pirulo,carmen"
   },
   {
     "id": "9054",
@@ -19,10 +15,6 @@
     "duration": "180 min",
     "genre": "Drama",
     "director": "pirulin",
-    "actor": "lala,Rosa",
-    "plot":"No se que poner",
-    "seasons": null,
-    "number": null,
-    "episodes": null
+    "actor": "lala,Rosa"
   }
     ]

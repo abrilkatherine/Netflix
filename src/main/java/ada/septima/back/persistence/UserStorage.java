@@ -8,4 +8,7 @@ public class UserStorage {
 
     ObjectMapper objectMapper;
 
+    public UserStorage(ObjectMapper objectMappper){
+        this.objectMapper=objectMappper;
+    }
 }
