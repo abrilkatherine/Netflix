@@ -26,9 +26,6 @@ public class Usuario {
 
     public void mirar(ContenidoUnitario unContenidoUnitario){
         getContenidoUnitarioVisto().add(unContenidoUnitario);
-        if(this.vioContenidoCompleto(unContenidoUnitario.contenidoGeneralDelUnitario())){
-            getContenidoVistoCompleto().add(unContenidoUnitario.contenidoGeneralDelUnitario());
-        }
     }
 
     public Boolean vioContenidoCompleto(ContenidoGeneral unContenido){

@@ -35,7 +35,7 @@ public abstract class ContenidoGeneral {
         return duracion;
     }
 
-    abstract Boolean fuisteVistoPor(Usuario unUsuario);
+    public abstract Boolean fuisteVistoPor(Usuario unUsuario);
 
     public String getGenero() {
         return genero;

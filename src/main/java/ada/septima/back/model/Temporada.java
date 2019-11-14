@@ -8,6 +8,7 @@ public class Temporada extends ContenidoGeneral {
     private List<Capitulo> capitulos;
     private String nombre;
     private String genero;
+    private Serie miserie;
 
     public Temporada(String nombre, String genero, List<Capitulo> capitulos){
         super(null, nombre, null, null, null, genero, null);
@@ -35,5 +36,9 @@ public class Temporada extends ContenidoGeneral {
     }
     public Boolean fuisteVistoPor(Usuario unUsuario) {
         return capitulos.stream().allMatch(capitulo -> capitulo.fuisteVistoPor(unUsuario));
+    }
+
+    public Serie getMiserie() {
+        return miserie;
     }
 }
