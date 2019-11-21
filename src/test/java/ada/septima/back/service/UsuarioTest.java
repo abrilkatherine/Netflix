@@ -78,6 +78,7 @@ public class UsuarioTest {
         personita.setContenidoUnitarioVisto(contenidoUnitarioList);
          assertTrue(personita.vioContenidoCompleto(breakingBad));
      }
+
 }
 
 

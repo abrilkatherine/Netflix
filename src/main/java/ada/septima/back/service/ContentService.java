@@ -34,6 +34,6 @@ public class ContentService {
 
     private Response contenToResponse(Content content, ContentOmdb contentOmdb){
         Response newResponse;
-        return newResponse= new Response(content.getId(),content.getTitle(),content.getYear(),content.getDuration(),content.getGenre(),content.getDirector(),content.getActor(),content.getPlot());
+        return newResponse= new Response(content.getId(),content.getTitle(),content.getYear(),content.getDuration(),content.getGenre(),content.getDirector(),content.getActor(),contentOmdb.getPlot());
     }
 }
