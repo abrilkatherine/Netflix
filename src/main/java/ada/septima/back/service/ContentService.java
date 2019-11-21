@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import ada.septima.back.persistence.ContentStorage;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -27,13 +28,19 @@ public class ContentService {
         List<Content> contentsFromJson = contentStorage.readContent();
         Content contentFiltered = contentsFromJson.stream().filter(
                 contentUnidad -> contentUnidad.getTitle().equals(title))
-                .findFirst().get(); //Revisar que pasa cuando viene vacìo
+                .findFirst()
+                .orElseThrow(() -> new RuntimeException("No se encontró contenido con el título solicitado")); //Revisar que pasa cuando viene vacìo
 
         return contenToResponse(contentFiltered, restClientStorage.omdbResponsePorTitlo(title));
     }
 
     private Response contenToResponse(Content content, ContentOmdb contentOmdb){
-        Response newResponse;
-        return newResponse= new Response(content.getId(),content.getTitle(),content.getYear(),content.getDuration(),content.getGenre(),content.getDirector(),content.getActor(),content.getPlot());
+        Response newResponse = new Response(
+                content.getId(),
+                content.getTitle(),
+                content.getYear(),content.getDuration(),
+                content.getGenre(),content.getDirector(),content.getActor());
+        return newResponse;
+
     }
 }

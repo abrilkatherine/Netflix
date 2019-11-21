@@ -31,7 +31,9 @@ public class UserService {
 
     private Response contenidoToResponse(ContenidoUnitario contenidoUnitario){
         Response responseNew;
-        return responseNew = new Response(contenidoUnitario.getId(), contenidoUnitario.getNombre(), contenidoUnitario.getAño(), contenidoUnitario.getDuracion(), contenidoUnitario.getGenero(), contenidoUnitario.getDirector(), contenidoUnitario.getActores(), null);
+        return responseNew = new Response(contenidoUnitario.getId(), contenidoUnitario.getNombre(), contenidoUnitario.getAño(),
+                contenidoUnitario.getDuracion(), contenidoUnitario.getGenero(), contenidoUnitario.getDirector(),
+                contenidoUnitario.getActores());
 
     }
 }

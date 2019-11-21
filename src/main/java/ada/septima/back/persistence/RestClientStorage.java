@@ -12,9 +12,12 @@ import java.io.IOException;
 @Component
 public class RestClientStorage {
 
-    String title;
-    String contentId;
     ObjectMapper objectMapper;
+
+    public RestClientStorage(ObjectMapper objectMapper){
+        this.objectMapper=objectMapper;
+    }
+
 
     public ContentOmdb omdbResponsePorTitlo(String title){
         try {

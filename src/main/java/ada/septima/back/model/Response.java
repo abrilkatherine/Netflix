@@ -18,7 +18,7 @@ public class Response implements Serializable {
     }
 
     public Response(Integer id, String title, Integer year, Integer duration, String genre, String director,
-                    List<String> actors, String plot){
+                    List<String> actors){
     }
 
     public Integer getId() {
