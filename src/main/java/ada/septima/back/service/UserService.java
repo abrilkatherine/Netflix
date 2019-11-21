@@ -17,7 +17,7 @@ public class UserService {
     private List<Content> contentList;
 
     public List<Response> contentsWatched(){
-        List <ContenidoUnitario> listaDeContenidoUnitario = user.getContenidoUnitarioVisto();
+        List <ContenidoUnitario> listaDeContenidoUnitario = getUser().getContenidoUnitarioVisto();
         return  listaDeContenidoUnitario.stream().map(contenido -> contenidoToResponse(contenido)).collect(Collectors.toList());
 
     }
@@ -35,5 +35,13 @@ public class UserService {
                 contenidoUnitario.getDuracion(), contenidoUnitario.getGenero(), contenidoUnitario.getDirector(),
                 contenidoUnitario.getActores());
 
+    }
+
+    public Usuario getUser() {
+        return user;
+    }
+
+    public void setUser(Usuario user) {
+        this.user = user;
     }
 }

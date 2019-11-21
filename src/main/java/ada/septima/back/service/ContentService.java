@@ -35,12 +35,12 @@ public class ContentService {
     }
 
     private Response contenToResponse(Content content, ContentOmdb contentOmdb){
+
         Response newResponse = new Response(
                 content.getId(),
                 content.getTitle(),
                 content.getYear(),content.getDuration(),
                 content.getGenre(),content.getDirector(),content.getActor());
         return newResponse;
-
     }
 }
