@@ -1,11 +1,16 @@
 package ada.septima.back.model;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.io.Serializable;
 import java.util.List;
 
 
 public class ContentOmdb implements Serializable {
 
+    @JsonIgnoreProperties
     private Integer id;
     private String title;
     private Integer year;
@@ -19,8 +24,15 @@ public class ContentOmdb implements Serializable {
 
     }
 
-    public ContentOmdb(Integer id, String title, Integer year, Integer duration, String genre, String director,
-                       String actors,String plot){
+    @JsonCreator
+    public ContentOmdb(@JsonProperty Integer id,
+                       @JsonProperty String title,
+                       @JsonProperty Integer year,
+                       @JsonProperty Integer duration,
+                       @JsonProperty String genre,
+                       @JsonProperty String director,
+                       @JsonProperty String actors,
+                       @JsonProperty String plot){
     }
 
     public Integer getId() {

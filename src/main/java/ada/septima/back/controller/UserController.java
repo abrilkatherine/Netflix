@@ -2,6 +2,7 @@ package ada.septima.back.controller;
 
 import ada.septima.back.model.Response;
 import ada.septima.back.model.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import ada.septima.back.service.ContentService;
 import ada.septima.back.service.UserService;
@@ -12,9 +13,7 @@ import java.util.List;
 @RestController
 public class UserController {
 
-    public User users;
     private ContentService contentService;
-
 
     private UserService userService;
 

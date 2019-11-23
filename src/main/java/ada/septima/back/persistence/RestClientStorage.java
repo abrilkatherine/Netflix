@@ -4,6 +4,8 @@ import ada.septima.back.model.Content;
 import ada.septima.back.model.ContentOmdb;
 import ada.septima.back.model.Response;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
@@ -12,12 +14,12 @@ import java.io.IOException;
 @Component
 public class RestClientStorage {
 
+    @Autowired
     ObjectMapper objectMapper;
 
     public RestClientStorage(ObjectMapper objectMapper){
         this.objectMapper=objectMapper;
     }
-
 
     public ContentOmdb omdbResponsePorTitlo(String title){
         try {

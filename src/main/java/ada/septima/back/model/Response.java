@@ -1,10 +1,14 @@
 package ada.septima.back.model;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.io.Serializable;
 import java.util.List;
 
 public class Response implements Serializable {
 
+    @Autowired
     private Integer id;
     private String title;
     private Integer year;
@@ -17,6 +21,7 @@ public class Response implements Serializable {
     public Response() {
     }
 
+    @JsonCreator
     public Response(Integer id, String title, Integer year, Integer duration, String genre, String director,
                     List<String> actors){
     }
