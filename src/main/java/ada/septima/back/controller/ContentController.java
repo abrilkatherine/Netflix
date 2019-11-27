@@ -20,7 +20,7 @@ public class ContentController {
     }
 
     @GetMapping("/content")
-    public Response content(@RequestParam(value = "title", required = false) String title){
+    public List<Response> content(@RequestParam(value = "title", required = false) String title){
             return contentService.contents(title);
     }
 }
