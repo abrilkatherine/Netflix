@@ -24,21 +24,22 @@ public class ContentService {
         this.restClientStorage = restClientStorage;
     }
 
-    public Response contents(String title) {
+    public List<Response> contents(String title) {
         List<Content> contentsFromJson = contentStorage.readContent();
         if (title==null){
-            return contentsFromJson;/*cuando esta vacia, devolver toda la lista.
+            return contentsFromJson.stream().map(content -> content.contentToResponse()).collect(Collectors.toList());
+            /*cuando esta vacia, devolver toda la lista.
              Mapear para que devuelva la lista de response*/
         }else{
-        Content contentFiltered = contentsFromJson.stream().filter(
-                contentUnidad -> contentUnidad.getTitle().equals(title))
+        List<Content> contentFiltered = contentsFromJson.stream().filter(
+                contentUnidad -> contentUnidad.getTitle().equals(title)).collect(Collectors.toList());
                 //no es find, porque debe devolver todos los filtrados, no solo uno
-                .orElseThrow(() -> new RuntimeException("No se encontró contenido con el título solicitado"));
-        return contenToResponse(contentFiltered, restClientStorage.omdbResponsePorTitlo(title));
+
+        return contentFiltered.stream().map(content -> content.contentToResponse()).collect(Collectors.toList());
     }
 
     }
-    private Response contenToResponse(Content content, ContentOmdb contentOmdb){
+    private Response contentOmdbToResponse(Content content, ContentOmdb contentOmdb){
 
         Response newResponse = new Response(
                 content.getId(),

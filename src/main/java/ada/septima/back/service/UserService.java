@@ -23,8 +23,8 @@ public class UserService {
     }
 
     public Content addContents(Content newContent) {
-        contentList = contentStorage.readContent();
-        contentList.add(newContent);
+        setContentList(contentStorage.readContent());
+        getContentList().add(newContent);
         return newContent;
 
     }
@@ -43,5 +43,13 @@ public class UserService {
 
     public void setUser(Usuario user) {
         this.user = user;
+    }
+
+    public List<Content> getContentList() {
+        return contentList;
+    }
+
+    public void setContentList(List<Content> contentList) {
+        this.contentList = contentList;
     }
 }

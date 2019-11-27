@@ -1,9 +1,7 @@
 package ada.septima.back.service;
 
-import ada.septima.back.model.ContenidoUnitario;
-import ada.septima.back.model.Pelicula;
-import ada.septima.back.model.Response;
-import ada.septima.back.model.Usuario;
+import ada.septima.back.model.*;
+import ada.septima.back.persistence.ContentStorage;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -19,6 +17,9 @@ public class UserServiceTest {
     private Pelicula titanic = new Pelicula(14, "titanic", 1997, null, null, null, null);
     private Pelicula elOrigen = new Pelicula(13, "el origen", 2009, null, null, null, null);
     private UserService service = new UserService();
+    private List<Content> contentList = new ArrayList<>();
+    private Content content = mock(Content.class);
+
 
 
     public void SetUp(){
@@ -26,6 +27,7 @@ public class UserServiceTest {
         contenidoUnitarioList.add(titanic);
         contenidoUnitarioList.add(elOrigen);
         personita.setContenidoUnitarioVisto(contenidoUnitarioList);
+
 
     }
 
@@ -35,6 +37,13 @@ public class UserServiceTest {
         service.contentsWatched().stream().map(Response::getTitle).
                 allMatch(titulo-> responseExpected.contains(titulo));
 
+    }
+
+    @Test
+    public void addContents(){
+        service.setContentList(contentList);
+        service.addContents(content);
+        service.getContentList().contains(content);
     }
 
 

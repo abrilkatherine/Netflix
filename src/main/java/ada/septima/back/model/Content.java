@@ -89,4 +89,14 @@ public class Content implements Serializable {
     public List<String> getActor() {
         return actors;
     }
+
+    public Response contentToResponse(){
+
+        Response newResponse = new Response(
+                this.getId(),
+                this.getTitle(),
+                this.getYear(),this.getDuration(),
+                this.getGenre(),this.getDirector(),this.getActor());
+        return newResponse;
+    }
 }
