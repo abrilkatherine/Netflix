@@ -23,7 +23,7 @@ public class UserService {
     }
 
     public Content addContents(Content newContent) {
-        setContentList(contentStorage.readContent());
+       setContentList(contentStorage.readContent());
         getContentList().add(newContent);
         return newContent;
 

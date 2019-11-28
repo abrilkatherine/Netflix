@@ -9,6 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 public class UserServiceTest {
     private Usuario personita = new Usuario("personita");
@@ -19,6 +20,7 @@ public class UserServiceTest {
     private UserService service = new UserService();
     private List<Content> contentList = new ArrayList<>();
     private Content content = mock(Content.class);
+    private ContentStorage contentStorage =  mock(ContentStorage.class);
 
 
 
@@ -41,6 +43,7 @@ public class UserServiceTest {
 
     @Test
     public void addContents(){
+        when(contentStorage.readContent());
         service.setContentList(contentList);
         service.addContents(content);
         service.getContentList().contains(content);
