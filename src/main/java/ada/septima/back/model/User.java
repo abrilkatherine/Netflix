@@ -1,14 +1,19 @@
 package ada.septima.back.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+
 import java.io.Serializable;
 
 public class User implements Serializable {
 
+    @Autowired
     private Integer id;
     private String name;
 
     public User() {
     }
+
 
     public User(Integer id, String name) {
 

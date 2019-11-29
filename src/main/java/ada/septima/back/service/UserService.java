@@ -17,21 +17,39 @@ public class UserService {
     private List<Content> contentList;
 
     public List<Response> contentsWatched(){
-        List <ContenidoUnitario> listaDeContenidoUnitario = user.getContenidoUnitarioVisto();
-        return  listaDeContenidoUnitario.stream().map(contenido -> contenidoToResponse(contenido)).collect(Collectors.toList());
+        List <ContenidoUnitario> listaDeContenidoUnitario = getUser().getContenidoUnitarioVisto();
+        return  listaDeContenidoUnitario.stream().map(contenido -> contenToResponse(contenido)).collect(Collectors.toList());
 
     }
 
     public Content addContents(Content newContent) {
-        contentList = contentStorage.readContent();
-        contentList.add(newContent);
+       setContentList(contentStorage.readContent());
+        getContentList().add(newContent);
         return newContent;
 
     }
 
-    private Response contenidoToResponse(ContenidoUnitario contenidoUnitario){
+    private Response contenToResponse(ContenidoUnitario contenidoUnitario){
         Response responseNew;
-        return responseNew = new Response(contenidoUnitario.getId(), contenidoUnitario.getNombre(), contenidoUnitario.getAño(), contenidoUnitario.getDuracion(), contenidoUnitario.getGenero(), contenidoUnitario.getDirector(), contenidoUnitario.getActores(), null);
+        return responseNew = new Response(contenidoUnitario.getId(), contenidoUnitario.getNombre(), contenidoUnitario.getAño(),
+                contenidoUnitario.getDuracion(), contenidoUnitario.getGenero(), contenidoUnitario.getDirector(),
+                contenidoUnitario.getActores());
 
+    }
+
+    public Usuario getUser() {
+        return user;
+    }
+
+    public void setUser(Usuario user) {
+        this.user = user;
+    }
+
+    public List<Content> getContentList() {
+        return contentList;
+    }
+
+    public void setContentList(List<Content> contentList) {
+        this.contentList = contentList;
     }
 }

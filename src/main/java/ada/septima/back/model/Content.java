@@ -20,7 +20,7 @@ public class Content implements Serializable {
     }
 
     public Content(Integer id, String title, Integer year, Integer duration, String genre, String director,
-                   List<String> actor, String plot, String seasons, Integer number, Integer episodes){
+                   List<String> actor){
 
         this. id=id;
         this.title=title;
@@ -33,9 +33,9 @@ public class Content implements Serializable {
     }
     @JsonCreator
     public Content(Integer id, String title, String year, String duration, String genre, String director,
-                   String actor, String plot, String seasons, Integer number, Integer episodes){
+                   String actor){
 
-        this(id,title,Integer.valueOf(year), Integer.valueOf(duration.split("\\s")[0]), genre, director, Arrays.asList(actor.split(",")), plot, seasons, number, episodes);
+        this(id,title,Integer.valueOf(year), Integer.valueOf(duration.split("\\s")[0]), genre, director, Arrays.asList(actor.split(",")));
     }
 
     public Integer getId() {
@@ -88,5 +88,15 @@ public class Content implements Serializable {
 
     public List<String> getActor() {
         return actors;
+    }
+
+    public Response contentToResponse(){
+
+        Response newResponse = new Response(
+                this.getId(),
+                this.getTitle(),
+                this.getYear(),this.getDuration(),
+                this.getGenre(),this.getDirector(),this.getActor());
+        return newResponse;
     }
 }
