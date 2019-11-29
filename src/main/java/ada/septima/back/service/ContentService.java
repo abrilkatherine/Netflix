@@ -29,7 +29,7 @@ public class ContentService {
                 contentUnidad -> contentUnidad.getTitle().equals(title))
                 .findFirst().get(); //Revisar que pasa cuando viene vacìo
 
-        return contenToResponse(contentFiltered, restClientStorage.omdbResponsePorTitlo(title));
+        return contenToResponse(contentFiltered, restClientStorage.omdbResponsePorTitulo(title));
     }
 
     private Response contenToResponse(Content content, ContentOmdb contentOmdb){

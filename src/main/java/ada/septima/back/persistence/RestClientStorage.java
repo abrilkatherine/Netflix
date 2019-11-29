@@ -16,7 +16,7 @@ public class RestClientStorage {
     String contentId;
     ObjectMapper objectMapper;
 
-    public ContentOmdb omdbResponsePorTitlo(String title){
+    public ContentOmdb omdbResponsePorTitulo(String title){
         try {
             RestTemplate restTemplate = new RestTemplate();
             final String uri= "http://www.omdbapi.com/?&apikey=a6c7f00c&t="+title.toLowerCase();
