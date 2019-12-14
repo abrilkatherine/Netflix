@@ -8,7 +8,6 @@ import java.util.List;
 
 public class Response implements Serializable {
 
-    @Autowired
     private Integer id;
     private String title;
     private Integer year;
@@ -23,7 +22,15 @@ public class Response implements Serializable {
 
     @JsonCreator
     public Response(Integer id, String title, Integer year, Integer duration, String genre, String director,
-                    List<String> actors){
+                   List<String> actors, String plot) {
+        this.id = id;
+        this.title = title;
+        this.year = year;
+        this.duration = duration;
+        this.genre = genre;
+        this.director = director;
+        this.actors = actors;
+        this.plot = plot;
     }
 
     public Integer getId() {

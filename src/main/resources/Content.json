@@ -6,7 +6,8 @@
     "duration": "194 min",
     "genre": "Drama",
     "director": "James Cameron",
-    "actor": "Leonado DiCaprio,pirulo,carmen"
+    "actors": "Leonado DiCaprio,pirulo,carmen",
+    "plot": "sarasasa"
   },
   {
     "id": "9054",
@@ -15,6 +16,7 @@
     "duration": "180 min",
     "genre": "Drama",
     "director": "pirulin",
-    "actor": "lala,Rosa"
+    "actors": "lala,Rosa",
+    "plot": "sarasasa"
   }
     ]

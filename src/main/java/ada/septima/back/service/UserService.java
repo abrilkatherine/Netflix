@@ -15,6 +15,7 @@ public class UserService {
     private Usuario user;
     private ContentStorage contentStorage;
     private List<Content> contentList;
+    private String plot;
 
     public List<Response> contentsWatched(){
         List <ContenidoUnitario> listaDeContenidoUnitario = getUser().getContenidoUnitarioVisto();
@@ -33,7 +34,7 @@ public class UserService {
         Response responseNew;
         return responseNew = new Response(contenidoUnitario.getId(), contenidoUnitario.getNombre(), contenidoUnitario.getAño(),
                 contenidoUnitario.getDuracion(), contenidoUnitario.getGenero(), contenidoUnitario.getDirector(),
-                contenidoUnitario.getActores());
+                contenidoUnitario.getActores(),contenidoUnitario.getPlot());
 
     }
 
@@ -51,5 +52,13 @@ public class UserService {
 
     public void setContentList(List<Content> contentList) {
         this.contentList = contentList;
+    }
+
+    public String getPlot() {
+        return plot;
+    }
+
+    public void setPlot(String plot) {
+        this.plot = plot;
     }
 }

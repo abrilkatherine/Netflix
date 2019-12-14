@@ -12,11 +12,12 @@ public abstract class ContenidoGeneral {
     private Integer id;
     private Integer año;
     private String director;
+    private  String plot;
     private List<ContenidoUnitario> contenidoUnitarioVisto;
 
     public ContenidoGeneral(){}
 
-    public ContenidoGeneral(Integer id, String nombre, Integer año, List<String> actores, Integer duracion, String genero, String director) {
+    public ContenidoGeneral(Integer id, String nombre, Integer año, List<String> actores, Integer duracion, String genero, String director, String plot) {
         this.setNombre(nombre);
         this.setId(id);
         this.setGenero(genero);
@@ -24,6 +25,7 @@ public abstract class ContenidoGeneral {
         this.actores = actores;
         this.setAño(año);
         this.setDirector(director);
+        this.setPlot(plot);
     }
 
     public List<String> getActores() {
@@ -75,5 +77,13 @@ public abstract class ContenidoGeneral {
 
     public void setDirector(String director) {
         this.director = director;
+    }
+
+    public String getPlot() {
+        return plot;
+    }
+
+    public void setPlot(String plot) {
+        this.plot = plot;
     }
 }

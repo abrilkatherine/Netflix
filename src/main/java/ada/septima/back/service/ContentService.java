@@ -28,8 +28,6 @@ public class ContentService {
         List<Content> contentsFromJson = contentStorage.readContent();
         if (title==null){
             return contentsFromJson.stream().map(content -> content.contentToResponse()).collect(Collectors.toList());
-            /*cuando esta vacia, devolver toda la lista.
-             Mapear para que devuelva la lista de response*/
         }else{
         List<Content> contentFiltered = contentsFromJson.stream().filter(
                 contentUnidad -> contentUnidad.getTitle().equals(title)).collect(Collectors.toList());
@@ -42,8 +40,12 @@ public class ContentService {
         Response newResponse = new Response(
                 content.getId(),
                 content.getTitle(),
-                content.getYear(),content.getDuration(),
-                content.getGenre(),content.getDirector(),content.getActor());
+                content.getYear(),
+                content.getDuration(),
+                content.getGenre(),
+                content.getDirector(),
+                content.getActors(),
+                content.getPlot());
         return newResponse;
     }
 }

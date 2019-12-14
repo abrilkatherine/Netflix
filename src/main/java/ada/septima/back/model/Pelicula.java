@@ -4,8 +4,8 @@ import java.util.List;
 
 public class Pelicula extends ContenidoUnitario {
 
-    public Pelicula(Integer id, String nombre, Integer year, List<String> actores, Integer duracion, String genero, String director) {
-        super(id, nombre, year, actores, duracion, genero, director);
+    public Pelicula(Integer id, String nombre, Integer year, List<String> actores, Integer duracion, String genero, String director, String plot) {
+        super(id, nombre, year, actores, duracion, genero, director, plot);
     }
 
     @Override

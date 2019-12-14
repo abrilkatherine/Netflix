@@ -6,8 +6,8 @@ public class Capitulo extends ContenidoUnitario {
 
     private Serie miserie;
 
-    public Capitulo(Integer id, String nombre, Integer year, List<String> actores, Integer duracion, String genero, String director, Serie miserie) {
-        super(id, nombre, year, actores, duracion, genero, director);
+    public Capitulo(Integer id, String nombre, Integer year, List<String> actores, Integer duracion, String genero, String director, Serie miserie, String plot) {
+        super(id, nombre, year, actores, duracion, genero, director, plot);
         this.miserie=miserie;
 
     }

@@ -9,8 +9,9 @@ public class Serie extends ContenidoGeneral  {
     private String nombre;
     private String genero;
 
-    public Serie(Integer id, String nombre, Integer año,  String genero, List<Temporada> temporadas, String director) {
-        super(id, nombre, año, null, null, genero,  director);
+    public Serie(Integer id, String nombre, Integer año,  String genero, List<Temporada> temporadas, String director,
+                 String plot) {
+        super(id, nombre, año, null, null, genero,  director, plot);
         this.temporadas = temporadas;
     }
 

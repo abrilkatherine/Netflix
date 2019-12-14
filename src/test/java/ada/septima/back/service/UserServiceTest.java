@@ -15,8 +15,8 @@ public class UserServiceTest {
     private Usuario personita = new Usuario("personita");
     private List<ContenidoUnitario> contenidoUnitarioList = new ArrayList<>();
     private List<String> responseExpected = Arrays.asList("titanic", "el origen");
-    private Pelicula titanic = new Pelicula(14, "titanic", 1997, null, null, null, null);
-    private Pelicula elOrigen = new Pelicula(13, "el origen", 2009, null, null, null, null);
+    private Pelicula titanic = new Pelicula(14, "titanic", 1997, null, null, null, null, "plot");
+    private Pelicula elOrigen = new Pelicula(13, "el origen", 2009, null, null, null, null, "plot");
     private UserService service = new UserService();
     private List<Content> contentList = new ArrayList<>();
     private Content content = mock(Content.class);

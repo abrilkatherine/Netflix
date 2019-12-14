@@ -2,7 +2,7 @@ package ada.septima.back.model;
 
 import java.util.List;
 
-public abstract class ContenidoUnitario extends ContenidoGeneral{
+public abstract class ContenidoUnitario extends ContenidoGeneral {
 
     private Integer duracion;
     private List<String> actores;
@@ -15,12 +15,12 @@ public abstract class ContenidoUnitario extends ContenidoGeneral{
     private List<ContenidoUnitario> contenidoUnitarioVisto;
     private Serie miserie;
 
-    public ContenidoUnitario(){
+    public ContenidoUnitario() {
         super();
     }
 
-    public ContenidoUnitario(Integer id, String nombre, Integer año, List<String> actores, Integer duracion, String genero, String director) {
-        super(id, nombre, año, actores, duracion, genero, director);
+    public ContenidoUnitario(Integer id, String nombre, Integer año, List<String> actores, Integer duracion, String genero, String director, String plot) {
+        super(id, nombre, año, actores, duracion, genero, director, plot);
     }
 
     public List<String> getActores() {
@@ -35,6 +35,7 @@ public abstract class ContenidoUnitario extends ContenidoGeneral{
     public Boolean fuisteVistoPor(Usuario unUsuario) {
         return unUsuario.visteEsteContenidoCompleto(this);
     }
+
     public abstract ContenidoGeneral contenidoGeneralDelUnitario();
 
     public String getGenero() {
@@ -84,4 +85,6 @@ public abstract class ContenidoUnitario extends ContenidoGeneral{
     public void setMiserie(Serie miserie) {
         this.miserie = miserie;
     }
+
 }
+

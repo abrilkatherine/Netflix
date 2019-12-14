@@ -14,13 +14,14 @@ public class Content implements Serializable {
     private String genre;
     private String director;
     private List<String> actors;
+    private String plot;
 
     public Content(){
 
     }
 
     public Content(Integer id, String title, Integer year, Integer duration, String genre, String director,
-                   List<String> actor){
+                   List<String> actors, String plot){
 
         this. id=id;
         this.title=title;
@@ -28,14 +29,15 @@ public class Content implements Serializable {
         this.duration=duration; //Integer.valueOf(...)
         this.genre=genre;
         this.director=director;
-        this.actors=actor;
+        this.actors=actors;
+        this.plot=plot;
         
     }
     @JsonCreator
     public Content(Integer id, String title, String year, String duration, String genre, String director,
-                   String actor){
+                   String actors, String plot){
 
-        this(id,title,Integer.valueOf(year), Integer.valueOf(duration.split("\\s")[0]), genre, director, Arrays.asList(actor.split(",")));
+        this(id,title,Integer.valueOf(year), Integer.valueOf(duration.split("\\s")[0]), genre, director, Arrays.asList(actors.split(",")),plot);
     }
 
     public Integer getId() {
@@ -86,17 +88,26 @@ public class Content implements Serializable {
         this.director = director;
     }
 
-    public List<String> getActor() {
+    public List<String> getActors() {
         return actors;
     }
 
-    public Response contentToResponse(){
+    public String getPlot() {
+        return plot;
+    }
 
-        Response newResponse = new Response(
+    public void setPlot(String plot) {
+        this.plot = plot;
+    }
+
+    public Response contentToResponse() {
+
+        Response contentToReponse = new Response(
                 this.getId(),
                 this.getTitle(),
-                this.getYear(),this.getDuration(),
-                this.getGenre(),this.getDirector(),this.getActor());
-        return newResponse;
+                this.getYear(), this.getDuration(),
+                this.getGenre(), this.getDirector(), this.getActors(),
+                this.getPlot());
+        return contentToReponse;
     }
 }

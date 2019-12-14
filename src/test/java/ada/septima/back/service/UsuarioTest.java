@@ -11,7 +11,7 @@ import static org.mockito.Mockito.*;
 public class UsuarioTest {
     private Usuario personita;
     private String willy;
-    private ContenidoUnitario titanic = new Pelicula(123, "titanic",1997, null, 120, "drama", "cameron");
+    private ContenidoUnitario titanic = new Pelicula(123, "titanic",1997, null, 120, "drama", "cameron", "plot");
     private List<Temporada> temporadas = new ArrayList<>();
     private List<Capitulo> capitulos1;
     private List<Capitulo> capitulos2;
@@ -21,9 +21,9 @@ public class UsuarioTest {
     private Capitulo cap4 = mock(Capitulo.class);
     private List<ContenidoUnitario> contenidoUnitarioList;
     private List<ContenidoGeneral> contenidoGeneralList;
-    private Temporada temporada1 = new Temporada("temporada 1", "policial", capitulos1);
-    private Temporada temporada2 = new Temporada("temporada 2", "policial", capitulos2);
-    private Serie breakingBad = new Serie(1234, "Breaking Bad", 2007, "policial", temporadas, null);
+    private Temporada temporada1 = new Temporada("temporada 1", "policial", capitulos1, "plot");
+    private Temporada temporada2 = new Temporada("temporada 2", "policial", capitulos2, "plot");
+    private Serie breakingBad = new Serie(1234, "Breaking Bad", 2007, "policial", temporadas, null, "plot");
 
 
     public void setUp(){
