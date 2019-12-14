@@ -1,13 +1,10 @@
 package ada.septima.back.service;
-
 import ada.septima.back.model.*;
 import ada.septima.back.persistence.ContentStorage;
 import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -23,14 +20,11 @@ public class UserServiceTest {
     private ContentStorage contentStorage =  mock(ContentStorage.class);
 
 
-
     public void SetUp(){
         service.setUser(personita);
         contenidoUnitarioList.add(titanic);
         contenidoUnitarioList.add(elOrigen);
         personita.setContenidoUnitarioVisto(contenidoUnitarioList);
-
-
     }
 
     @Test
