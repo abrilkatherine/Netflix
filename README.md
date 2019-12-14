@@ -1,5 +1,6 @@
 # TPNetflix
-Lourdes Ibarra Bargados
 Daniela Melian
 Abril Chavaño
 Melina Gagino
+Vania Romero
+Nati Koval
